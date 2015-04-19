@@ -1,0 +1,540 @@
+/*
+Sticky Jots
+Prototyping Experiences
+03/26/13
+*/
+
+/* Body */
+html body {
+  background: #FFF;
+  color: #000;
+  font-size: .65em;
+  font-family: 'museo_sans500', serif;
+  line-height: 1.429em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+section, form {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+ margin: 0;
+ padding: 0;
+ font-family: 'museo_slab500', serif;
+}
+
+h1 {
+  font-size: 3em;
+  color: #000;
+}
+
+
+h2 {
+  font-size: 1.5em;
+  color: #999;
+  padding-bottom: .65em;
+}
+
+p {
+  font-size: 1.5em;
+  font-family: 'museo_sans500';
+  text-align: left;
+  line-height: 1.75em;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'museo_slab500';
+  color: #0092D2;
+}
+
+input, button {
+  font-family: 'museo_slab500', serif; 
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('../font/museosans_500-webfont.eot');
+    src: url('../font/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_500-webfont.woff') format('woff'),
+         url('../font/museosans_500-webfont.ttf') format('truetype'),
+         url('../font/museosans_500-webfont.svg#museo_sans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans900';
+    src: url('../font/museosans_900-webfont.eot');
+    src: url('../font/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_900-webfont.woff') format('woff'),
+         url('../font/museosans_900-webfont.ttf') format('truetype'),
+         url('../font/museosans_900-webfont.svg#museo_sans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_slab500';
+    src: url('../font/museo_slab_500-webfont.eot');
+    src: url('../font/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museo_slab_500-webfont.woff') format('woff'),
+         url('../font/museo_slab_500-webfont.ttf') format('truetype'),
+         url('../font/museo_slab_500-webfont.svg#museo_slab500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_slab700';
+    src: url('../font/museo_slab_700-webfont.eot');
+    src: url('../font/museo_slab_700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museo_slab_700-webfont.woff') format('woff'),
+         url('../font/museo_slab_700-webfont.ttf') format('truetype'),
+         url('../font/museo_slab_700-webfont.svg#museo_slab700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans500_italic';
+    src: url('../font/museosans_500_italic-webfont.eot');
+    src: url('../font/museosans_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_500_italic-webfont.woff') format('woff'),
+         url('../font/museosans_500_italic-webfont.ttf') format('truetype'),
+         url('../font/museosans_500_italic-webfont.svg#museo_sans500_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#space {
+  margin-right: 20px;
+}
+
+.photo {
+  margin: 30px auto 0 auto;
+}
+
+.italic {
+  font-family: 'museo_sans500_italic'
+}
+
+/* Hero */
+
+#hero {
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+#intro_container {
+  margin: 0 auto;
+  position: relative;
+  width: 60%;
+  height: 500px;
+}
+
+.container {
+  background: url("../assets/white.png");
+  position: absolute;
+  width: 400px;
+  top: 30%;  
+  left: 50%;  
+  margin-left: -230px;
+  padding: 30px;
+}
+
+.intro_text {
+  margin: 20px 0;
+} 
+
+
+.hero_text {
+  margin: 20px 0;
+  font-size: 2em;
+} 
+
+/* Kickstarter Message */
+
+#kickstarter {
+  width: 200px;
+  right: 0;
+}
+
+
+/* Body Content */
+.content{
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+#info {
+  margin-top: 18%;
+}
+
+.grey {
+  margin: 50px auto 0 auto;
+  padding: 55px 0 70px 0;
+  background: #DADCE0;
+}
+
+.white {
+  margin: 50px auto 70px auto;
+}
+
+/* Logo */
+#logo {
+  margin: 20px auto;
+  width: 145px;
+}
+
+/* Banner */
+.banner {
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* Navigation */
+.nav {
+  background: #FFF;
+  opacity: 0.65;
+  margin: 0 auto 10px auto;
+  padding: 0;
+  width: 100%;
+  line-height: 50px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.nav ul {
+  margin: 0 auto;
+  padding: 0 0 0 30px;
+  width: auto;
+}  
+
+.nav li {
+  margin: 0 auto;
+  padding: 0 50px 0 0;
+  display: inline;
+}  
+
+.nav a:link, .banner nav a:visited {
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none; 
+  color: #000;
+  text-shadow: 0px 1px 1px #FFF;
+  display:inline-block;
+  font-size: 1.5em;
+  font-family: 'museo_slab500';
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+.nav li.active {
+  background: #DEDEDE;
+  color: #000;
+}
+
+#nav_active {
+  color: #000;
+  font-family: 'museo_slab700';
+}
+
+/* Sub Navigation */
+.sub-nav {
+  margin: 0 auto 30px auto;
+  padding: 0;
+  width: 100%;
+  line-height: 20px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.sub-nav ul {
+  margin: 0 auto;
+  padding: 0;
+  width: auto;
+}  
+
+.sub-nav li {
+  margin: 0 auto;
+  padding: 0 50px 0 0;
+  display: inline;
+}  
+
+.sub-nav a:link {
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none; 
+  color: #0092D2;
+  text-shadow: 0px 1px 1px #FFF;
+  display:inline-block;
+  font-size: 1.5em;
+  font-family: 'museo_slab500';
+}
+
+.sub-nav a:hover {
+  color: #000;
+}
+
+.sub-nav li.active {
+  color: #000;
+}
+
+#sub-nav_active {
+  color: #000;
+  font-family: 'museo_slab700';
+}
+
+/* Title */
+.title {
+  margin: 0 auto;
+  width: 960px; 
+  line-height: 100px;
+}
+
+.line {
+  margin: 0 auto 50px auto;
+  width: 150px; 
+  border-bottom: 2px solid #000;
+}
+
+#video {
+  margin: 50px auto 0 auto;
+  width: 960px;
+}
+
+/* Slideshow */
+
+.slideshow {
+  margin: 30px auto;
+  width: 960px;
+}
+
+.description {
+  margin: 0 auto 0 auto;
+  width: 800px;
+}
+
+/* Biography */
+.bio {
+  margin: 50px auto;
+  width: 960px;
+  height: 100%;
+  overflow: auto;
+}
+
+.bio h2 {
+  text-align: left;
+}
+
+
+.left, .right {
+  overflow: auto;
+  width: 960px;
+}
+
+.right {
+  margin: 0 0 10px 0;
+}
+
+.right_thumb {
+  margin: 0 0 10px 0;
+  clear:right;
+}
+
+.right_img {
+  float: right;
+}
+
+.left {
+  margin: 0 auto;
+}
+
+.left_thumb {
+  margin: 0 0 10px 0;
+  clear:left;
+}
+
+.left_img {
+  margin-right: 20px;
+  float: left;
+  clear: left;
+}
+
+.comment {
+  font-size: 1.5em;
+}
+
+/* Form */
+
+#mc_embed_signup {
+  margin: 50px auto;
+  width: 400px;
+  overflow: hidden;
+}
+
+#left {
+  margin: 0 auto;
+  float: left;
+  overflow: hidden;
+  width: 465px;
+}
+
+.icon {
+  margin: 20px 10px 0 0;
+}
+
+#mce-MMERGE3 {
+  padding: 10px 0 0 10px;
+  width: 100%;
+  height: 205px;
+  font-size: 1.5em;
+  border: none;
+  resize: none;
+  font-family: 'museo_slab500';
+}
+
+#right {
+  margin: 0 auto;
+  float: right;
+  overflow: hidden;
+  width: 465px;
+}
+
+#mce-EMAIL, #mce-FNAME, #mce-LNAME {
+  margin-top: 20px;
+  padding-left: 10px;
+  width: 100%;
+  height: 50px;
+  font-size: 1.5em;
+  border: none;
+  font-family: 'museo_slab500';
+  background: #DADCE0;
+}
+
+.button{
+  margin: 20px 0;
+  background: #0092D2;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 1.5em;
+  color: #FFF;
+  font-family: 'museo_slab500';
+}
+
+.order {
+  margin: 20px 0;
+  background: #0092D2;
+  display: block;
+  width: 100%;
+  line-height: 70px;
+  border: none;
+  font-size: 2em;
+  color: #FFF;
+  font-family: 'museo_slab500';
+}
+
+.order:hover, .order:active {
+  background: #0081BB;
+}
+
+#order_big {
+  margin: 0 auto;
+  width: 300px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#mce-responses {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-color: #666;
+}
+
+#mce-success-response {
+  margin-top: 10px;
+}
+
+/* Footer */
+
+#footer {
+  margin: 0 auto;
+  height: 50px;
+
+}
+
+#footer p {
+  font-size: .85em;
+  text-align: center;
+  color: #999;
+}
+
+/* Links*/
+
+.links {
+  margin: 0 auto 0 auto;
+  width: 800px;
+  text-align: left;
+}
+
+.links ul {
+  margin: 30px auto 0 auto;
+}
+
+.links li {
+  margin-top: 30px;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+#resources {
+  margin-top: 15%;
+}
+
+.img_links {
+  position: relative; 
+  padding: 0 0 0 11%;
+}
+
+.img_links img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+
